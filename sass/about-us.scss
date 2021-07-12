@@ -1,0 +1,355 @@
+
+
+
+/*************** COLORS **************/
+$color-green: #0A7F2E;
+$color-text-dark: #201F1E;
+$color-text: #828282;
+$color-tab: #bbbbbb;
+
+/*************** Fonts **************/
+@font-face {
+  font-family: "Exo-Black";
+  src: url("../assets/fonts/Exo/static/Exo-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo-Bold";
+  src: url("../assets/fonts/Exo/static/Exo-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo-Medium";
+  src: url("../assets/fonts/Exo/static/Exo-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo-Regular";
+  src: url("../assets/fonts/Exo/static/Exo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo-SemiBold";
+  src: url("../assets/fonts/Exo/static/Exo-SemiBold.ttf") format("truetype");
+}
+.font-exo-black {
+  font-family: "Exo-Black", sans-serif;
+}
+.font-exo-bold {
+  font-family: "Exo-Bold", sans-serif;
+}
+.font-exo-medium {
+  font-family: "Exo-Medium", sans-serif;
+}
+.font-exo-regular {
+  font-family: "Exo-Regular", sans-serif;
+}
+.font-exo-semibold {
+  font-family: "Exo-SemiBold", sans-serif;
+}
+
+/*************************************/
+@font-face {
+  font-family: "Exo2-Black";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo2-Bold";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo2-Medium";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo2-Regular";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo2-SemiBold";
+  src: url("../assets/fonts/Exo_2/static/Exo2-SemiBold.ttf") format("truetype");
+}
+.font-exo2-black {
+  font-family: "Exo2-Black", sans-serif;
+}
+.font-exo2-bold {
+  font-family: "Exo2-Bold", sans-serif;
+}
+.font-exo2-medium {
+  font-family: "Exo2-Medium", sans-serif;
+}
+.font-exo2-regular {
+  font-family: "Exo2-Regular", sans-serif;
+}
+.font-exo2-semibold {
+  font-family: "Exo2-SemiBold", sans-serif;
+}
+/**************** Icons ***************/
+.icon{
+  display: inline-block;
+
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+
+  background-color: $color-tab;
+
+  width: 10px;
+  height: 10px;
+  mask-image: url("../assets/icons/main-page/link.svg");
+  -webkit-mask-image: url("../assets/icons/main-page/link.svg");
+}
+
+.icon-search{
+  width: 24px;
+  height: 22px;
+  background-color: #666666;
+
+  display: inline-block;
+
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+
+  mask-image: url("../assets/icons/main-page/search.svg");
+  -webkit-mask-image: url("../assets/icons/main-page/search.svg");
+}
+
+html {
+  font-size: 16px;
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+
+    .top {
+      .navigation-bar {
+        top: 0;
+        width: 100%;
+        padding: 0 15px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 2;
+
+        .top-nav-right {
+          padding-top: 14px;
+          padding-bottom: 14px;
+          width: 100%;
+          color: #666666;
+
+          .input-group {
+            margin-left: 35px;
+            width: auto;
+
+            input {
+              background-color: transparent;
+              outline: none;
+              border-bottom: 1px solid #666666;
+              border-top: none;
+              border-left: none;
+              border-right: none;
+              color: #666666;
+              transition: all 0.2s linear;
+            }
+
+          }
+
+          .btn {
+            color: #666666;
+            border: 1px solid #666666;
+            padding: 15px 30px;
+            margin-left: 40px;
+            margin-right: 20px;
+
+            &:focus {
+              box-shadow: 0 0 0 0.2rem rgba(102, 102, 102, 0.25);
+            }
+          }
+        }
+
+        .top-nav-left {
+          padding-top: 14px;
+          padding-bottom: 14px;
+
+          .logo {
+            width: 54%;
+
+            h1 {
+              color: $color-green;
+              font-size: 17px;
+            }
+
+            p {
+              font-size: 6px;
+              color: $color-green;
+            }
+          }
+
+          button {
+            position: relative;
+
+            &:focus {
+              box-shadow: 0 0 0 0.2rem rgba(10, 127, 46, 0.45);
+            }
+          }
+
+          .navbar-menu {
+            position: absolute;
+            top: 64px;
+            left: 50px;
+            background-color: white;
+            box-shadow: 0 0 30px rgba(9, 103, 38, 0.2);
+
+            li {
+              padding: 0;
+
+              .nav-link {
+                padding: 0;
+                margin: 2px 6px 10px 6px;
+                font-size: 14px;
+                color: $color-text-dark;
+                border-bottom: 1px solid transparent;
+
+                &:hover {
+                  border-bottom: 1px solid black;
+                }
+              }
+            }
+
+            &::after {
+              content: "";
+              width: 100%;
+              height: 3px;
+              background-color: $color-green;
+              position: absolute;
+              top: 0;
+            }
+          }
+
+          a {
+            > img {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+
+      > .nav {
+        position: fixed;
+        z-index: 6;
+        top: 15%;
+        left: 0;
+
+        .nav-item {
+          margin-top: 20px;
+
+          .nav-link {
+
+            &.active {
+              .icon {
+                background-color: $color-green;
+              }
+            }
+          }
+        }
+      }
+      .container{
+        position: relative;
+        margin-top: 150px;
+        .about-us{
+                 position: relative;
+                 >h6{
+                   font-size: 24px;
+                   margin-left: 30px;
+                   color: $color-green;
+
+                 }
+                 .grey-line{
+                   position: absolute;
+                   background-color: $color-tab;
+                   width: 3px;
+                   height: 32px;
+                   left: 16px;
+                   top: -13px;
+                 }
+                 .green-line{
+                   position: absolute;
+                   background-color: $color-green;
+                   width: 3px;
+                   height: 32px;
+                   left: 8px;
+                   top: 0;
+                 }
+               }
+
+        .main-img{
+          width: auto;
+          height: auto;
+          z-index: 1;
+          background-color: #507ba8;
+          margin-top: 100px;
+          position: relative;
+          img{
+            z-index: 2;
+            position: absolute;
+            width: 50%;
+          }
+          .img-back{
+            position: absolute;
+            top: 192px;
+            right: 45%;
+            z-index: 1;
+            background-color: #9b9b9b;
+            width: 298px;
+            height: 171px;
+          }
+          .more{
+            border-radius: 10px;
+            text-align: left;
+            padding: 20px;
+            background-color: white;
+            width: 50%;
+            position: absolute;
+            z-index: 3;
+            top: 230px;
+            left: 370px;
+            box-shadow: 0 0 10px darkgrey;
+            button{
+              margin-top: 20px;
+              display: block;
+              margin-left: auto;
+              margin-right: 10px;
+            }
+          }
+        }
+
+        .information{
+          margin-top: 443px;
+          flex-wrap: wrap;
+          display: flex;
+          width: 40%;
+          h4{
+            margin-top: 23px;
+            color: $color-green;
+            font-size: 35px;
+            margin-right: 40px;
+          }
+          p{
+            margin-right: 40px;
+            font-size: 16px;
+            color: $color-text;
+          }
+        }
+      }
+      >h3{
+        position: absolute;
+        left: -9%;
+        bottom: 0;
+        font-size: 50px;
+        z-index: 5;
+        transform: rotate(-90deg);
+        color: #dddddd;
+      }
+    }
+  }
+}

@@ -1,0 +1,335 @@
+
+
+/*************** COLORS **************/
+$color-green: #0A7F2E;
+$color-text-dark: #201F1E;
+$color-text: #8A8A8A;
+$color-tab: #CCCCCC;
+
+/*************** Fonts **************/
+@font-face {
+  font-family: "Exo-Black";
+  src: url("../assets/fonts/Exo/static/Exo-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo-Bold";
+  src: url("../assets/fonts/Exo/static/Exo-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo-Medium";
+  src: url("../assets/fonts/Exo/static/Exo-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo-Regular";
+  src: url("../assets/fonts/Exo/static/Exo-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo-SemiBold";
+  src: url("../assets/fonts/Exo/static/Exo-SemiBold.ttf") format("truetype");
+}
+.font-exo-black {
+  font-family: "Exo-Black", sans-serif;
+}
+.font-exo-bold {
+  font-family: "Exo-Bold", sans-serif;
+}
+.font-exo-medium {
+  font-family: "Exo-Medium", sans-serif;
+}
+.font-exo-regular {
+  font-family: "Exo-Regular", sans-serif;
+}
+.font-exo-semibold {
+  font-family: "Exo-SemiBold", sans-serif;
+}
+
+/*************************************/
+@font-face {
+  font-family: "Exo2-Black";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo2-Bold";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo2-Medium";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo2-Regular";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Exo2-SemiBold";
+  src: url("../assets/fonts/Exo_2/static/Exo2-SemiBold.ttf") format("truetype");
+}
+.font-exo2-black {
+  font-family: "Exo2-Black", sans-serif;
+}
+.font-exo2-bold {
+  font-family: "Exo2-Bold", sans-serif;
+}
+.font-exo2-medium {
+  font-family: "Exo2-Medium", sans-serif;
+}
+.font-exo2-regular {
+  font-family: "Exo2-Regular", sans-serif;
+}
+.font-exo2-semibold {
+  font-family: "Exo2-SemiBold", sans-serif;
+}
+
+/*****************  Icons  ***********************/
+.icon{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+
+  background-color:$color-tab;
+
+  mask-image: url("../assets/icons/main-page/link.svg");
+  -webkit-mask-image: url("../assets/icons/main-page/link.svg");
+}
+
+html{
+  font-size: 16px;
+  body{
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+
+
+    .top{
+      position: relative;
+      .navigation-bar{
+        width: 100%;
+        padding: 0 15px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 2;
+        .top-nav-right{
+          padding-top: 14px;
+          padding-bottom: 14px;
+          width: 100%;
+          color: white;
+         .input-group{
+           margin-left: 35px;
+          width: auto;
+           input{
+             right: 0;
+             background-color: transparent;
+             outline: none;
+            border-bottom: 1px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+             color: white;
+             transition: all 0.2s linear;
+
+           }
+
+         }
+          .btn{
+            color: white;
+            border: 1px solid white;
+            padding: 15px 30px;
+            margin-left: 40px;
+            margin-right: 20px;
+            &:focus{
+              box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+            }
+          }
+
+
+        }
+        .top-nav-left{
+          padding-top: 14px;
+          padding-bottom: 14px;
+          .logo {
+            width: 54%;
+            h1 {
+              color: $color-green;
+              font-size: 17px;
+
+            }
+
+            p {
+              font-size: 6px;
+              color: $color-green;
+
+            }
+          }
+          button{
+            position: relative;
+            &:focus{
+              box-shadow: 0 0 0 0.2rem rgba(10, 127, 46, 0.45);
+            }
+          }
+          .navbar-menu{
+            position: absolute;
+            top: 64px;
+            left: 50px;
+            background-color: white;
+            box-shadow: 0 0 30px rgba(9, 103, 38, 0.2);
+            li{
+              padding: 0;
+              .nav-link{
+                padding: 0;
+                margin: 2px 6px 10px 6px;
+                font-size: 14px;
+                color: $color-text-dark;
+                &:hover{
+                  border-bottom: 1px solid black;
+                }
+              }
+            }
+            &::after{
+              content: "";
+              width: 100%;
+              height: 3px;
+              background-color: $color-green;
+              position: absolute;
+              top: 0;
+            }
+          }
+          a{
+            >img{
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+
+
+         .top-left {
+           position: relative;
+           .container {
+             padding-right: 50px;
+             padding-left: 70px;
+
+             .nav{
+               position: fixed;
+               z-index: 2;
+               top: 16%;
+               left: 0;
+               .nav-item{
+                 .nav-link{
+                   margin-top: 18px;
+
+                   &.active{
+                     .icon{
+                       background-color: $color-green;
+                     }
+                   }
+                 }
+               }
+             }
+             .tab-content{
+               .tab-pane1{
+                 section{
+                   margin-bottom: 30px;
+                   h2{
+                     margin-top: 150px;
+                     font-size: 42px;
+                     line-height: 58px;
+                   }
+                   p{
+                     margin-top: 40px;
+                     font-size: 20px;
+                     line-height: 163%;
+                   }
+                   .input-group{
+                     margin-top: 60px;
+                     input{
+                       padding: 26px 15px;
+                       box-shadow: 0 0 30px rgba(9, 103, 38, 0.1);
+                     }
+                     .btn{
+                       font-size: 12px;
+                     }
+                   }
+                   h5{
+                     font-size: 15px;
+                     line-height: 20px;
+                     color: $color-text;
+                     margin-top: 200px;
+                     margin-bottom: 30px;
+                   }
+                 }
+               }
+               .tab-pane2{
+
+               }
+
+             }
+             h3{
+               position: absolute;
+               left:-16%;
+               bottom: 15%;
+               font-size: 50px;
+               transform: rotate(-90deg);
+               color: #dddddd;
+             }
+           }
+         }
+         .top-right{
+
+           background: linear-gradient(38.36deg, #0A7F2E 0%, #000000 181.17%);
+           .container{
+             padding-right: 50px;
+             padding-left: 50px;
+
+
+             .carousel{
+               margin-bottom: 40px;
+               .carousel-indicators{
+                 bottom: -30px;
+                 li{
+                   width: 10px;
+                   height: 10px;
+                   margin-right: 6px;
+                   margin-left: 6px;
+                 }
+               }
+               .carousel-inner{
+                 .carousel-item{
+                   img{
+                     width: 80%;
+                     margin-top: 27%  ;
+                     display: block;
+                     margin-right: auto;
+                     margin-left: auto;
+                   }
+                   a{
+                     border-bottom:1px solid white;
+                     padding-bottom: 3px;
+                     font-size: 27px;
+                     line-height: 35px;
+                     color: white;
+                     display: inline-block;
+                     margin-left: 10%;
+                     margin-top: 54px;
+                   }
+                   p{
+                     color: white;
+                     font-size: 15px;
+                     line-height: 20px;
+                     margin-top: 10px;
+                     margin-left: 10%;
+                     padding-bottom: 40px;
+                   }
+                 }
+               }
+             }
+           }
+       }
+    }
+  }
+}

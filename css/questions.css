@@ -1,0 +1,123 @@
+/*************** COLORS **************/
+/*************** Fonts **************/
+@font-face {
+  font-family: "Exo-Black";
+  src: url("../assets/fonts/Exo/static/Exo-Black.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo-Bold";
+  src: url("../assets/fonts/Exo/static/Exo-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo-Medium";
+  src: url("../assets/fonts/Exo/static/Exo-Medium.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo-Regular";
+  src: url("../assets/fonts/Exo/static/Exo-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo-SemiBold";
+  src: url("../assets/fonts/Exo/static/Exo-SemiBold.ttf") format("truetype"); }
+.font-exo-black {
+  font-family: "Exo-Black", sans-serif; }
+
+.font-exo-bold {
+  font-family: "Exo-Bold", sans-serif; }
+
+.font-exo-medium {
+  font-family: "Exo-Medium", sans-serif; }
+
+.font-exo-regular {
+  font-family: "Exo-Regular", sans-serif; }
+
+.font-exo-semibold {
+  font-family: "Exo-SemiBold", sans-serif; }
+
+/*************************************/
+@font-face {
+  font-family: "Exo2-Black";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Black.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo2-Bold";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo2-Medium";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Medium.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo2-Regular";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo2-SemiBold";
+  src: url("../assets/fonts/Exo_2/static/Exo2-SemiBold.ttf") format("truetype"); }
+.font-exo2-black {
+  font-family: "Exo2-Black", sans-serif; }
+
+.font-exo2-bold {
+  font-family: "Exo2-Bold", sans-serif; }
+
+.font-exo2-medium {
+  font-family: "Exo2-Medium", sans-serif; }
+
+.font-exo2-regular {
+  font-family: "Exo2-Regular", sans-serif; }
+
+.font-exo2-semibold {
+  font-family: "Exo2-SemiBold", sans-serif; }
+
+html {
+  font-size: 16px; }
+  html body {
+    overflow-x: hidden;
+    width: 100%; }
+    html body .container > button {
+      margin-top: 20px; }
+      html body .container > button img {
+        width: 18px;
+        height: 18px; }
+    html body .container .row .col-md-7 {
+      padding-right: 150px; }
+      html body .container .row .col-md-7 > h2 {
+        margin-top: 60px;
+        font-size: 23px; }
+      html body .container .row .col-md-7 > p {
+        color: #8A8A8A;
+        margin-top: 10px;
+        font-size: 16px; }
+      html body .container .row .col-md-7 .row {
+        margin-top: 30px; }
+        html body .container .row .col-md-7 .row label {
+          color: #8A8A8A; }
+        html body .container .row .col-md-7 .row .form-control {
+          height: 40px; }
+          html body .container .row .col-md-7 .row .form-control:focus {
+            box-shadow: 0 0 0 0.05rem rgba(0, 123, 255, 0.25); }
+        html body .container .row .col-md-7 .row .col-12 {
+          margin-top: 30px; }
+          html body .container .row .col-md-7 .row .col-12 textarea {
+            height: 170px; }
+        html body .container .row .col-md-7 .row .col-md-6 {
+          margin-top: 30px; }
+      html body .container .row .col-md-7 .btn {
+        margin-top: 30px;
+        border-radius: 0;
+        margin-bottom: 50px;
+        font-size: 12px;
+        padding: 10px 25px; }
+    html body .container .row .col-md-5 .rightPage {
+      position: relative;
+      padding: 20px;
+      margin-top: 70px;
+      border: 3px solid #0A7F2E; }
+      html body .container .row .col-md-5 .rightPage .top {
+        margin-top: 20px; }
+      html body .container .row .col-md-5 .rightPage > h5 {
+        margin-top: 40px;
+        font-size: 20px; }
+      html body .container .row .col-md-5 .rightPage .infor {
+        margin-top: 23px; }
+    html body .container .row .col-md-5 .light-line {
+      top: 23%;
+      left: 3%;
+      position: absolute;
+      background-color: white;
+      height: 60%;
+      width: 8px; }
+
+/*# sourceMappingURL=questions.css.map */

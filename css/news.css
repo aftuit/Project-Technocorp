@@ -1,0 +1,231 @@
+/*************** COLORS **************/
+/*************** Fonts **************/
+@font-face {
+  font-family: "Exo-Black";
+  src: url("../assets/fonts/Exo/static/Exo-Black.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo-Bold";
+  src: url("../assets/fonts/Exo/static/Exo-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo-Medium";
+  src: url("../assets/fonts/Exo/static/Exo-Medium.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo-Regular";
+  src: url("../assets/fonts/Exo/static/Exo-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo-SemiBold";
+  src: url("../assets/fonts/Exo/static/Exo-SemiBold.ttf") format("truetype"); }
+.font-exo-black {
+  font-family: "Exo-Black", sans-serif; }
+
+.font-exo-bold {
+  font-family: "Exo-Bold", sans-serif; }
+
+.font-exo-medium {
+  font-family: "Exo-Medium", sans-serif; }
+
+.font-exo-regular {
+  font-family: "Exo-Regular", sans-serif; }
+
+.font-exo-semibold {
+  font-family: "Exo-SemiBold", sans-serif; }
+
+/*************************************/
+@font-face {
+  font-family: "Exo2-Black";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Black.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo2-Bold";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo2-Medium";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Medium.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo2-Regular";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Exo2-SemiBold";
+  src: url("../assets/fonts/Exo_2/static/Exo2-SemiBold.ttf") format("truetype"); }
+.font-exo2-black {
+  font-family: "Exo2-Black", sans-serif; }
+
+.font-exo2-bold {
+  font-family: "Exo2-Bold", sans-serif; }
+
+.font-exo2-medium {
+  font-family: "Exo2-Medium", sans-serif; }
+
+.font-exo2-regular {
+  font-family: "Exo2-Regular", sans-serif; }
+
+.font-exo2-semibold {
+  font-family: "Exo2-SemiBold", sans-serif; }
+
+/**************** Icons ***************/
+.icon {
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  background-color: #bbbbbb;
+  width: 10px;
+  height: 10px;
+  mask-image: url("../assets/icons/main-page/link.svg");
+  -webkit-mask-image: url("../assets/icons/main-page/link.svg"); }
+
+.icon-search {
+  width: 24px;
+  height: 22px;
+  background-color: #666666;
+  display: inline-block;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  mask-image: url("../assets/icons/main-page/search.svg");
+  -webkit-mask-image: url("../assets/icons/main-page/search.svg"); }
+
+html {
+  font-size: 16px; }
+  html body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%; }
+    html body header .navigation-bar {
+      top: 0;
+      width: 100%;
+      padding: 0 50px;
+      background-color: transparent;
+      position: absolute;
+      z-index: 2; }
+      html body header .navigation-bar .top-nav-right {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        width: 100%;
+        color: #666666; }
+        html body header .navigation-bar .top-nav-right .input-group {
+          margin-left: 35px;
+          width: auto;
+          border-bottom: 1px solid #666666; }
+          html body header .navigation-bar .top-nav-right .input-group input {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            color: #666666;
+            transition: all 0.2s linear; }
+        html body header .navigation-bar .top-nav-right .btn {
+          color: #666666;
+          border: 1px solid #666666;
+          padding: 15px 30px;
+          margin-left: 40px;
+          margin-right: 20px; }
+          html body header .navigation-bar .top-nav-right .btn:focus {
+            box-shadow: 0 0 0 0.2rem rgba(102, 102, 102, 0.25); }
+      html body header .navigation-bar .top-nav-left {
+        padding-top: 14px;
+        padding-bottom: 14px; }
+        html body header .navigation-bar .top-nav-left .logo {
+          width: 54%; }
+          html body header .navigation-bar .top-nav-left .logo h1 {
+            color: #0A7F2E;
+            font-size: 17px; }
+          html body header .navigation-bar .top-nav-left .logo p {
+            font-size: 6px;
+            color: #0A7F2E; }
+        html body header .navigation-bar .top-nav-left button {
+          position: relative; }
+          html body header .navigation-bar .top-nav-left button:focus {
+            box-shadow: 0 0 0 0.2rem rgba(10, 127, 46, 0.45); }
+        html body header .navigation-bar .top-nav-left .navbar-menu {
+          position: absolute;
+          top: 64px;
+          left: 50px;
+          background-color: white;
+          box-shadow: 0 0 30px rgba(9, 103, 38, 0.2); }
+          html body header .navigation-bar .top-nav-left .navbar-menu li {
+            padding: 0; }
+            html body header .navigation-bar .top-nav-left .navbar-menu li .nav-link {
+              padding: 0;
+              margin: 2px 6px 10px 6px;
+              font-size: 14px;
+              color: #201F1E;
+              border-bottom: 1px solid transparent; }
+              html body header .navigation-bar .top-nav-left .navbar-menu li .nav-link:hover {
+                border-bottom: 1px solid black; }
+          html body header .navigation-bar .top-nav-left .navbar-menu::after {
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color: #0A7F2E;
+            position: absolute;
+            top: 0; }
+        html body header .navigation-bar .top-nav-left a > img {
+          margin-right: 20px; }
+    html body main .container h6 {
+      margin-top: 170px;
+      color: #201F1E;
+      font-size: 30px; }
+    html body main .container .row {
+      margin-top: 20px; }
+      html body main .container .row .col-md-3 {
+        margin-top: 30px; }
+        html body main .container .row .col-md-3 .card {
+          border: none;
+          box-shadow: 0 4px 20px #E5E9FD;
+          transition: all 0.3s linear; }
+          html body main .container .row .col-md-3 .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 30px #E5E9FD; }
+          html body main .container .row .col-md-3 .card .card-body {
+            padding: 10px; }
+            html body main .container .row .col-md-3 .card .card-body .title {
+              height: 75px; }
+              html body main .container .row .col-md-3 .card .card-body .title h5 {
+                font-size: 15px; }
+            html body main .container .row .col-md-3 .card .card-body p {
+              margin-bottom: 0;
+              font-size: 14px; }
+            html body main .container .row .col-md-3 .card .card-body .foot {
+              margin-top: 14px; }
+              html body main .container .row .col-md-3 .card .card-body .foot p {
+                color: #9C9C9C; }
+    html body footer {
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(180deg, rgba(10, 127, 46, 0.75) 3.33%, rgba(0, 0, 0, 0.75) 100%), url("../assets/images/vacancy/footer.png"); }
+      html body footer .container .row .col-md-3 {
+        margin-top: 60px;
+        color: white; }
+        html body footer .container .row .col-md-3 .logo img {
+          width: 90%; }
+        html body footer .container .row .col-md-3 .logo h1 {
+          color: white;
+          font-size: 17px; }
+        html body footer .container .row .col-md-3 .logo p {
+          font-size: 3px;
+          color: white; }
+        html body footer .container .row .col-md-3 h4 {
+          margin-top: 27px; }
+        html body footer .container .row .col-md-3 p {
+          margin-top: 15px;
+          font-size: 13px; }
+        html body footer .container .row .col-md-3 .nav-link {
+          color: white;
+          padding: 0;
+          display: block;
+          margin-top: 10px; }
+        html body footer .container .row .col-md-3 .net img {
+          margin-left: 15px; }
+        html body footer .container .row .col-md-3 h6 {
+          font-size: 22px;
+          margin-top: 30px; }
+      html body footer .w-line {
+        background-color: white;
+        width: 100%;
+        height: 2px;
+        margin-top: 20px;
+        margin-bottom: 15px; }
+
+/*# sourceMappingURL=news.css.map */

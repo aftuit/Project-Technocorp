@@ -1,0 +1,684 @@
+/*************** COLORS **************/
+$color-green: #0A7F2E;
+$color-text-dark: #201F1E;
+$color-text: #828282;
+$color-tab: #bbbbbb;
+$color-icon: #a8a8a8;
+$color-col-6: #F5F5F5;
+
+/*************** Fonts **************/
+@font-face {
+  font-family: "Exo-Black";
+  src: url("../assets/fonts/Exo/static/Exo-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo-Bold";
+  src: url("../assets/fonts/Exo/static/Exo-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo-Medium";
+  src: url("../assets/fonts/Exo/static/Exo-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo-Regular";
+  src: url("../assets/fonts/Exo/static/Exo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo-SemiBold";
+  src: url("../assets/fonts/Exo/static/Exo-SemiBold.ttf") format("truetype");
+}
+
+.font-exo-black {
+  font-family: "Exo-Black", sans-serif;
+}
+
+.font-exo-bold {
+  font-family: "Exo-Bold", sans-serif;
+}
+
+.font-exo-medium {
+  font-family: "Exo-Medium", sans-serif;
+}
+
+.font-exo-regular {
+  font-family: "Exo-Regular", sans-serif;
+}
+
+.font-exo-semibold {
+  font-family: "Exo-SemiBold", sans-serif;
+}
+
+/*************************************/
+@font-face {
+  font-family: "Exo2-Black";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-Bold";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-Medium";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-Regular";
+  src: url("../assets/fonts/Exo_2/static/Exo2-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Exo2-SemiBold";
+  src: url("../assets/fonts/Exo_2/static/Exo2-SemiBold.ttf") format("truetype");
+}
+
+.font-exo2-black {
+  font-family: "Exo2-Black", sans-serif;
+}
+
+.font-exo2-bold {
+  font-family: "Exo2-Bold", sans-serif;
+}
+
+.font-exo2-medium {
+  font-family: "Exo2-Medium", sans-serif;
+}
+
+.font-exo2-regular {
+  font-family: "Exo2-Regular", sans-serif;
+}
+
+.font-exo2-semibold {
+  font-family: "Exo2-SemiBold", sans-serif;
+}
+
+/**************** Icons ***************/
+.icon {
+  display: inline-block;
+
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+
+  background-color: $color-tab;
+
+  width: 10px;
+  height: 10px;
+  mask-image: url("../assets/icons/main-page/link.svg");
+  -webkit-mask-image: url("../assets/icons/main-page/link.svg");
+}
+
+.icon-search {
+  width: 24px;
+  height: 22px;
+  background-color: #666666;
+
+  display: inline-block;
+
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+
+  mask-image: url("../assets/icons/main-page/search.svg");
+  -webkit-mask-image: url("../assets/icons/main-page/search.svg");
+}
+
+html {
+  font-size: 16px;
+
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+
+    header {
+      .navigation-bar {
+        top: 0;
+        width: 100%;
+        padding: 0 50px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 2;
+
+        .top-nav-right {
+          padding-top: 14px;
+          padding-bottom: 14px;
+          width: 100%;
+          color: #666666;
+
+          .input-group {
+            margin-left: 35px;
+            width: auto;
+            border-bottom: 1px solid #666666;
+
+            input {
+              background-color: transparent;
+              outline: none;
+              border: none;
+              color: #666666;
+              transition: all 0.2s linear;
+            }
+
+          }
+
+          .btn {
+            color: #666666;
+            border: 1px solid #666666;
+            padding: 15px 30px;
+            margin-left: 40px;
+            margin-right: 20px;
+
+            &:focus {
+              box-shadow: 0 0 0 0.2rem rgba(102, 102, 102, 0.25);
+            }
+          }
+        }
+
+        .top-nav-left {
+          padding-top: 14px;
+          padding-bottom: 14px;
+
+          .logo {
+            width: 54%;
+
+            h1 {
+              color: $color-green;
+              font-size: 17px;
+            }
+
+            p {
+              font-size: 6px;
+              color: $color-green;
+            }
+          }
+
+          button {
+            position: relative;
+
+            &:focus {
+              box-shadow: 0 0 0 0.2rem rgba(10, 127, 46, 0.45);
+            }
+          }
+
+          .navbar-menu {
+            position: absolute;
+            top: 64px;
+            left: 50px;
+            background-color: white;
+            box-shadow: 0 0 30px rgba(9, 103, 38, 0.2);
+
+            li {
+              padding: 0;
+
+              .nav-link {
+                padding: 0;
+                margin: 2px 6px 10px 6px;
+                font-size: 14px;
+                color: $color-text-dark;
+                border-bottom: 1px solid transparent;
+
+                &:hover {
+                  border-bottom: 1px solid black;
+                }
+              }
+            }
+
+            &::after {
+              content: "";
+              width: 100%;
+              height: 3px;
+              background-color: $color-green;
+              position: absolute;
+              top: 0;
+            }
+          }
+
+          a {
+            > img {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+      .head{
+        width: 95%;
+        display: block;
+        margin-left: auto;
+        .row{
+          .col-md-6{
+            padding: 0;
+            &:nth-child(1){
+              margin-top: 200px;
+            }
+            img{
+
+              &:nth-child(1){
+                position: relative;
+                width: 100%;
+              }
+              &:nth-child(2){
+                position: absolute;
+                z-index: 3;
+                width: 80%;
+                bottom: 18%;
+                right: 0;
+              }
+            }
+            h2{
+              font-size: 33px;
+
+            }
+            p{
+              color: $color-text;
+              &:nth-child(2){
+                margin-top: 30px;
+              }
+              &:nth-child(3){
+                margin-top: 10px;
+              }
+              line-height: 30px;
+              font-size: 17px;
+              margin-right: 100px;
+            }
+          }
+        }
+      }
+    }
+
+    main{
+      .top{
+        margin-top: 100px;
+        padding: 35px 44px;
+        background: {
+          size: 100%;
+          repeat: no-repeat;
+          image: linear-gradient(to right, rgba(10, 127, 46, 0.6), rgba(10, 127, 46, 0.6)), url("../assets/images/vacancy/main-top.png");
+        };
+        .border-1{
+          border: 1px solid white;
+          padding: 40px;
+          .row{
+            .col-7{
+              h1{
+                margin-top: 20px;
+
+              }
+              color: white;
+              button{
+                box-shadow: 0 0 10px white;
+                margin-top: 100px;
+                background-color: white;
+                padding: 12px 25px;
+                color: $color-green;
+                border-radius: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .row-1{
+        .col-md-6{
+          padding: 0;
+          &:nth-child(1){
+            background-color: $color-col-6;
+          }
+         .col6{
+           margin-left: 80px;
+           margin-right: 80px;
+           .schedule{
+             width: auto;
+             margin-top: 100px;
+             border-top: 3px solid $color-green;
+             border-bottom: 3px solid $color-green;
+             padding: 20px;
+             h6{
+               color: $color-text;
+             }
+             .per{
+               position: relative;
+               .green-circ{
+                 margin-left: 30px;
+                 position: absolute;
+                 top: -10px;
+                 width:15px;
+                 height: 15px;
+                 border-radius: 50%;
+                 background-color: rgba(10, 127, 46, 0.6);
+               }
+             }
+           }
+           ul{
+             li{
+               margin-top: 15px;
+               a{
+                 color: $color-text;
+               }
+               img{
+                 transition: all 0.4s linear;
+               }
+               &:hover{
+                 img{
+                   transform: rotate(360deg);
+
+                 }
+               }
+             }
+           }
+         }
+          .row{
+            .col-sm-6{
+              text-align: center;
+              h6{
+                margin-top: 100px;
+                font-size: 60px;
+                color: $color-green;
+              }
+              p{
+                color: $color-text;
+                font-size: 25px;
+              }
+            }
+          }
+        }
+      }
+
+      .row-2{
+        .col8{
+          background: {
+            size: 100%;
+            repeat: no-repeat;
+            image: url("../assets/images/vacancy/green-area.png");
+          };
+          .mid-circ{
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+          }
+          .big-circ{
+            position: absolute;
+            top: 7%;
+            left: 61%;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.15);
+          }
+          >.nav{
+            position: absolute;
+            top: 40%;
+            left: 40px;
+            li{
+              .nav-link{
+                padding: 0;
+                width: 12px;
+                height: 12px;
+                background-color: rgba(255, 255, 255, 0.3);
+                border-radius:0;
+                margin-top: 10px;
+                &.active{
+                  background-color: rgb(255, 255, 255);
+                }
+              }
+
+            }
+          }
+          .tab-content{
+            color: white;
+            margin-left: 60px;
+            h3{
+              margin-top: 45px;
+              font-size: 30px;
+              margin-left: 23px;
+            }
+         ul{
+           margin-top: 35px;
+           li{
+             transition: all 0.4s linear;
+             margin-top: 13px;
+             a{
+               font-size: 14px;
+               color: white;
+             }
+
+             &:hover{
+               transform: translateX(20px);
+             }
+           }
+         }
+
+          }
+
+          button{
+            box-shadow: 0 0 10px white;
+            margin-top: 60px;
+            margin-left: 83px;
+            background-color: white;
+            padding: 15px 40px;
+            color: #0A7F2E;
+            border-radius: 0;
+          }
+          .f-line{
+            position: absolute;
+            width: 50px;
+            height: 80px;
+            bottom: 0;
+            left: 40%;
+            background: rgba(255, 255, 255, 0.15);
+          }
+          .s-line{
+            position: absolute;
+            width: 50px;
+            height: 120px;
+            bottom: 0;
+            left: 48%;
+            background: rgba(255, 255, 255, 0.15);
+          }
+          .t-line{
+            position: absolute;
+            width: 50px;
+            height: 160px;
+            bottom: 0;
+            left: 56%;
+            background: rgba(255, 255, 255, 0.15);
+          }
+        }
+        .col4{
+          img{
+            width: 100%;
+            margin-top: 70px;
+          }
+        }
+      }
+
+      .container{
+        h6{
+          font-size: 26px;
+          margin-top: 70px;
+
+        }
+        .accordion-1{
+          margin-top: 50px;
+          .card{
+             border-radius: 0;
+            .card-header{
+              a{
+                font-size: 23px;
+                color: black;
+              }
+              padding: 22px;
+            }
+            .card-body{
+              border-bottom: 3px solid $color-green;
+              .body{
+                width: 97%;
+                margin-left: auto;
+                margin-right: auto;
+                .main-in{
+                  background-color: #f6f6f6;
+                  padding: 12px;
+                  border-left: 3px solid $color-green;
+                  font-size: 20px;
+                }
+                p{
+                  &:nth-child(2){
+                  margin-top: 34px;
+                }
+                  &:nth-child(3){
+                    margin-top: 9px;
+                    margin-bottom: 60px;
+                  }
+                }
+              }
+            }
+          }
+        }
+          .pictures{
+            position: relative;
+            img{
+              width: 27%;
+              filter: drop-shadow(0px 0px 50px rgba(10, 127, 46, 0.3));
+
+            }
+
+            .mid-text{
+              width: 45%;
+              position: absolute;
+              top: 20%;
+              left: 25%;
+              font-size: 40px;
+              color: $color-text;
+            }
+          }
+
+
+      }
+
+      .row-3{
+        margin-top:60px;
+        .col-md-5{
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .col-md-7{
+          h3{
+            font-size: 29px;
+          }
+          p{
+            font-size: 20px;
+            color: $color-text;
+          }
+          .btn{
+            margin-left: 53px;
+            margin-top:10px;
+            border-radius: 0;
+          }
+          .row {
+            margin-left: 30px;
+            label {
+              color: $color-text;
+            }
+
+            .form-control {
+              &:focus {
+                box-shadow: 0 0 0 0.05rem rgba(0, 123, 255, 0.25);
+              }
+
+              height: 50px;
+            }
+
+            .col-12 {
+              textarea {
+                height: 130px;
+              }
+
+              margin-top: 30px;
+            }
+
+            .col-md-6 {
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    footer{
+      background: {
+        size: 100%;
+        repeat: no-repeat;
+        image:  linear-gradient(180deg, rgba(10, 127, 46, 0.75) 3.33%, rgba(0, 0, 0, 0.75) 100%), url("../assets/images/vacancy/footer.png");
+      };
+      .container{
+        .row{
+          .col-md-3{
+            margin-top: 60px;
+            color: white;
+            .logo {
+              img{
+                width: 90%;
+              }
+              h1 {
+                color: white;
+                font-size: 17px;
+              }
+
+              p {
+                font-size: 3px;
+                color: white;
+              }
+            }
+            h4{
+              margin-top: 27px;
+            }
+            p{
+              margin-top: 15px;
+              font-size: 13px;
+            }
+            .nav-link{
+              color: white;
+              padding: 0;
+              display: block;
+              margin-top: 10px;
+            }
+            .net{
+              img{
+                margin-left: 15px;
+              }
+            }
+            h6{
+              font-size: 22px;
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+      .w-line{
+        background-color: white;
+        width: 100%;
+        height: 2px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+    }
+
+
+  }
+}
